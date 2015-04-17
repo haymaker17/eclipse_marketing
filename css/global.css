@@ -1,0 +1,431 @@
+
+/*--------------------------------------------------------------
+
+	* Filename		style.css
+	
+	* Description	global CSS
+	
+	* Version		0.1 feb 22 2009
+	
+	* Website		eclipsemarketing.com
+	
+	* Author		wirescape studios
+	
+	
+	==== STRUCTURE =============================================
+	
+	page width		
+	
+		
+	
+	
+	
+	
+	colors: 
+	
+	dark blue - #2a68d2
+	
+	light blue - #6b96e1
+	
+	light grey text - #717171
+	
+	darker grey text - #5b5b5b
+	
+	
+	
+--------------------------------------------------------------*/
+
+	
+	
+	
+	
+	
+	
+	
+/*  ---|  RESET  |-------------------------------------------------------------------  */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+body {
+	line-height:1;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+blockquote,q {
+	quotes:none;
+}
+	
+/* remember to define focus styles! */
+:focus {
+	outline:0;
+}
+	
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration:none;
+}
+
+del {
+	text-decoration:line-through;
+}
+	
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+	
+/*  ---|  END RESET  |-------------------------------------------------------------------  */
+
+
+
+
+
+	
+/*  ---|  CLEARFIX  |-------------------------------------------------------------------  */
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+	
+/* IE6 */
+* html .clearfix {
+	height:1%;
+}
+	
+/* IE7 */
+:first-child+html .clearfix {
+	min-height:1px;
+}
+
+/*  ---|  END CLEARFIX  |-------------------------------------------------------------------  */
+
+
+
+
+.clear {
+	clear:both;
+}
+
+body {
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+	font:normal 12px/1.9 'Lucida Grande', sans-serif;
+	color: #717171;
+	background: #fff url(../i/bg.gif) repeat-y center;
+}
+
+#wrapper {
+	width:1024px; /* 1138px; */
+	height:100%;
+	position:relative;
+	margin:0 auto;
+	border-left: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	background: #fff;
+}
+
+#content {
+	text-align:left;
+	margin: 35px 60px;
+	position: relative;
+	font:normal 13px/1.9 "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+	color: #5b5b5b;
+}
+
+
+	
+/*  ---|  HEADER  |-------------------------------------------------------------------  */
+
+#header {
+	height: 110px;	
+	text-align: left;
+	width: 100%;
+	height: 120px;
+	background: url(../i/header_bg.gif) repeat-x top;
+	position: relative;
+}
+
+#logo {
+   height: 68px;
+   width: 222px;
+   position: absolute;
+   left: 64px;
+   top: 22px;
+   border: 0;
+}
+
+#headerLogo {
+	padding-top: 20px;
+}
+
+h1 {
+   color: #2a68d2;
+   font-size: 24px;
+   padding-bottom: 10px;
+   font-weight: normal;
+   font-family: 'Lucida Grande', sans-serif;
+}
+
+h2 {
+   color: #2a68d2;
+   font-size: 18px;
+   padding-bottom: 13px;
+   font-weight: normal;
+   font-family: 'Lucida Grande', sans-serif;
+}
+
+h3 {
+   color: #2a68d2;
+   font-weight: normal;
+   font-family: 'Lucida Grande', sans-serif;
+}
+
+p {
+   padding-bottom: 25px;
+}
+
+#content a {
+   color: #2a68d2;
+   text-decoration: none;
+}
+
+#content a:hover {
+   color: #6b96e1;
+   text-decoration: underline;
+}
+
+
+/*  ---|  END HEADER  |-------------------------------------------------------------------  */
+
+
+
+
+
+
+/*  ---|  TOP NAVIGATION  |-------------------------------------------------------------------  */
+
+#nav {
+    position: absolute;
+    width: 507px;
+    height: 110px;
+    background: url(../i/header_nav.gif) no-repeat 0px -222px;  
+    right: 0px;
+}
+
+
+#nav li {
+	display: inline;
+}
+#nav li a:link, #nav li a:visited {
+    position: absolute;
+    top: 0px;
+    height: 110px;
+    text-indent: -9000px;
+    overflow: hidden;
+}
+#nav .line a:link, #nav .line a:visited {
+    left: 0px;
+    width: 126px;
+    background: url(../i/header_nav.gif) no-repeat 0px -222px;
+}
+#nav .line a:hover, #nav .line a:focus {
+    background: url(../i/header_nav.gif) no-repeat 0px -0px;
+}
+#nav .line a:active {
+    background: url(../i/header_nav.gif) no-repeat 0px -111px;
+}
+
+
+
+
+
+#nav .samples a:link, #nav .samples a:visited {
+    left: 126px;
+    width: 127px;
+    background: url(../i/header_nav.gif) no-repeat -126px -222px;
+}
+#nav .samples a:hover, #nav .samples a:focus {
+    background: url(../i/header_nav.gif) no-repeat -126px -0px;
+}
+#nav .samples a:active {
+    background: url(../i/header_nav.gif) no-repeat -126px -111px;
+}
+
+
+
+
+#nav .about a:link, #nav .about a:visited {
+    left: 253px;
+    width: 126px;
+    background: url(../i/header_nav.gif) no-repeat -253px -222px;
+}
+#nav .about a:hover, #nav .about a:focus {
+    background: url(../i/header_nav.gif) no-repeat -253px -0px;
+}
+#nav .about a:active {
+    background: url(../i/header_nav.gif) no-repeat -253px -111px;
+}
+
+
+
+
+#nav .contact a:link, #nav .contact a:visited {
+    left: 379px;
+    width: 128px;
+    background: url(../i/header_nav.gif) no-repeat -379px -222px;
+}
+#nav .contact a:hover, #nav .contact a:focus {
+    background: url(../i/header_nav.gif) no-repeat -379px -0px;
+}
+#nav .contact a:active {
+    background: url(../i/header_nav.gif) no-repeat -379px -111px;
+}
+
+
+
+
+
+/*  ---|  END TOP NAVIGATION  |-------------------------------------------------------------------  */
+
+
+
+
+
+	
+/*  ---|  FOOTER  |-------------------------------------------------------------------  */
+
+#footer {
+	width:100%;
+	background:url(../i/footer_bg.gif) repeat-x bottom;
+	color:#42494f;
+	clear: both;
+	height: 236px;
+	text-align: left;
+	line-height: 17px;
+	font-size: 12px;
+	color: #717171;
+	margin-top: 30px;
+}
+
+#footer div, #footer ul {
+	margin: 35px 0 0 60px; /* 35px 0 0 110px;  */
+	float: left;
+}
+
+#footer div a {
+	color:#717171;
+	text-decoration: none;
+}
+
+#footer ul a {
+	color:#2a68d2;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color:#2a68d2;
+	text-decoration:underline;
+}
+
+#footer p {
+	padding-top: 30px;
+	margin-left: 110px;
+	clear: both;
+	font-size: 11px;
+}
+
+
+#footer ul li {
+   display: inline;
+   padding-right: 40px;
+}
+
+/*  ---|  END FOOTER  |-------------------------------------------------------------------  */
+
+
+
+
+#Content {
+   height: 326px;
+   width: 100%;
+}
+
+#logoGrid {
+   padding-top: 30px;
+}
+
+#logoGrid li {
+   display: block;
+   float: left;
+   height: 120px;
+   width: 300px;
+}
+
+.img {
+   background: #ccc;
+   float: left; 
+   margin: 0 20px 10px 0; 
+   border:1px solid #2a68d2;
+   padding: 3px;
+}
+
+#content a.download_button {
+    font-family: 'Lucida Grande', sans-serif;
+    display: block;
+    width: 23%;
+    clear: both;
+    background: #6b96e1;
+    color: #FFF;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 2.5em;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+
+#content a.download_button:hover {
+    color: #fff;
+    background: #2a68d2;
+}
+
+a.download_button .arrow {
+    padding-left: 5px;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+
+a.download_button:hover .arrow {
+    -webkit-transform: scale(1.9);
+       -moz-transform: scale(1.9);
+        -ms-transform: scale(1.9);
+         -o-transform: scale(1.9);
+            transform: scale(1.9);
+}

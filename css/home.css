@@ -1,0 +1,95 @@
+
+/*--------------------------------------------------------------
+
+	* Filename		home.css
+	
+	* Description	global CSS
+	
+	* Version		0.1 feb 22 2009
+	
+	* Website		eclipsemarketing.com
+	
+	* Author		wirescape studios
+	
+	
+--------------------------------------------------------------*/
+
+	
+/* Accordion
+----------------------------------*/
+
+li { list-style-type: none; }
+#navigation { 
+   width:20em; 
+   font:normal 11.5px/1.9 'Lucida Grande', sans-serif;
+}
+
+#navigation {
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+	width:250px;
+	font-size: 13px;
+	color: #666666;
+	text-indent: 15px;
+}
+#navigation a.head {
+	cursor:pointer;
+	color: #666666;
+	display:block;
+	margin:0px 0 5px 0;
+	padding:0px;
+	text-decoration: none;
+	background: url(../i/arrow.gif) no-repeat 0 7px;
+}
+#navigation a.head:hover {
+	color:#2a68d2;
+}
+#navigation a.active {
+	background: url(../i/arrowDown.gif) no-repeat  -1px 7px;
+	color: #2a68d2;
+}
+#navigation a.current {
+	
+}
+#navigation ul {
+	border-width:0px;
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+}
+#navigation li {
+	list-style:none outside none; display:inline;
+}
+#navigation li li a {
+	color:#000000;
+	display:block;
+	text-indent:25px;
+	text-decoration: none;
+}
+#navigation li li a:hover {
+	color:#2a68d2;
+}
+
+
+/*  ---|  end accordion  |-------------------------------------------------------------------  */
+
+
+
+.leftNav {
+   padding-left;
+   float: left; 
+}
+
+.rightBlock {
+   padding-left: 130px;
+   float: left;
+   width: 500px;
+   padding-bottom: 30px;
+}
+
+.rightBlock img {
+   float: left; 
+   margin: 0 20px 10px 0;
+   border:1px solid #2a68d2;
+}
