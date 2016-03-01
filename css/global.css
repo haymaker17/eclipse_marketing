@@ -372,13 +372,24 @@ p {
 
 #logoGrid {
    padding-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 #logoGrid li {
    display: block;
-   float: left;
    height: 120px;
-   width: 300px;
+   width: 30%;
+   margin-right: 3%;
+}
+
+#logoGrid a {
+	display: block;
+}
+
+#logoGrid a:hover {
+	cursor: pointer;
 }
 
 .img {

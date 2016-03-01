@@ -22,26 +22,23 @@
 	<div id="wrapper">
       <?php include("inc/header.html"); ?>
 
-			<div id="content">
+		<div id="content">
 			
             <h1>Line Card</h1>
             <p>Eclipse is honored to represent some of the most distinguished manufacturers in the world:</p>
             
             <ul id="logoGrid">
-            <li><a href="http://www.caplugs.com/"><img src="i/caplugs/logo_75.png" alt="caplugs" width="168" /></a></li>
-            <li><a href="http://www.fastenerspecialty.com/"><img src="i/fastener_specialty/logo_75.png" alt="fastenerSpecialty" width="199" /></a></li>
-            <li><a href="http://www.hiroseusa.com/"><img src="i/hirose/logo_75.png" alt="hirose" width="110" /></a></li>
-            <li><a href="http://sensing.honeywell.com/"><img src="i/honeywell/honeywell_color.svg" alt="honeywell" width="168" /></a></li>
-            <li><a href="http://www.juddwire.com"><img src="i/judd/logo_75.png" alt="judd" width="188" /></a></li>
-            <!-- <li><a href="http://www.kingselectronics.com/"><img  src="i/logos/kings.gif" alt="kings" width="179" height="67"/></a></li> -->
-            <!-- <li><a href="http://nelson-miller.com/"><img src="i/logos/nelson.png" alt="nelson" width="150" height="62"/></a></li> -->
-            <li><a href="http://www.niccomp.com/"><img src="i/nic/logo_75.png" alt="nic" width="140" /></a></li>
-            <!-- <li><a href="http://www.pentair-ep.com/"><img  src="i/logos/pentair.gif" alt="pentair" width="187" height="55"/></a></li> -->
-            <li><a href="http://belpowersolutions.com/power"><img src="i/bel_power_solutions/bel_power_sol_color.svg" alt="Bel Power Solutions" width="184" /></a></li>
-            <li><a href="http://www.radiall.com/"><img src="i/radiall/logo_75.png" alt="radiall" width="163" /></a></li>
-            <!-- <li><a href="http://www.winchesterelectronics.com/"><img  src="i/logos/winchester.gif" alt="sumitomo" width="130" height="59"/></a></li> -->
+                  <li><a href="http://www.caplugs.com/"><img src="i/caplugs/logo_75.png" alt="caplugs" width="168" /></a></li>
+                  <li><a href="http://www.fastenerspecialty.com/"><img src="i/fastener_specialty/logo_75.png" alt="fastenerSpecialty" width="199" /></a></li>
+                  <li><a href="http://www.hiroseusa.com/"><img src="i/hirose/logo_75.png" alt="hirose" width="110" /></a></li>
+                  <li><a href="http://sensing.honeywell.com/"><img src="i/honeywell/honeywell_color.svg" alt="honeywell" width="168" /></a></li>
+                  <li><a href="http://www.juddwire.com"><img src="i/judd/logo_75.png" alt="judd" width="188" /></a></li>
+                  <li><a href="http://www.niccomp.com/"><img src="i/nic/logo_75.png" alt="nic" width="140" /></a></li>
+                  <li><a href="http://belpowersolutions.com/power"><img src="i/bel_power_solutions/bel_power_sol_color.svg" alt="Bel Power Solutions" width="184" /></a></li>
+                  <li><a href="http://www.radiall.com/"><img src="i/radiall/logo_75.png" alt="radiall" width="163" /></a></li>
+                  <li><a href="http://unipowerco.com/"><img src="i/unipower/logo_75.png" alt="unipower" width="163" /></a></li>
             </ul> 
-            <a class="download_button" href="downloads/Eclipse Line Card 2015.doc">Download our Line Card 
+            <a class="download_button" href="downloads/Eclipse Line Card 2016.doc">Download our Line Card 
             <img class="arrow" src="i/arrow_dn.svg" height="12" width="12"/>
             </a> 
                     

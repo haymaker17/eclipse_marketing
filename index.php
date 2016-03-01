@@ -17,34 +17,40 @@
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" >
 
-function initMenus() {
-	$('ul.menu ul').hide();
-	$.each($('ul.menu'), function(){
-	  $('#' + this.id + '.expandfirst ul:first').show();
-	});
-	$('ul.menu li a').click(
-	function() {
-   	var checkElement = $(this).next();
-   	var parent = this.parentNode.parentNode.id;
-   	if($('#' + parent).hasClass('noaccordion')) {
-   	$(this).next().slideToggle('normal');
-   	return false;
-	}
-	if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-	if($('#' + parent).hasClass('collapsible')) {
-	  $('#' + parent + ' ul:visible').slideUp('normal');
-	}
-	return false;
-	}
-	if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-	  $('#' + parent + ' ul:visible').slideUp('normal').removeClass("active");;
-	  checkElement.slideDown('normal').addClass("active");
-	  return false;
-	}
-	}
-	);
-		
-}
+   function initMenus() {
+     $('ul.menu ul').hide();
+     $.each($('ul.menu'), function(){
+      $('#' + this.id + '.expandfirst ul:first').show();
+   });
+
+     $('ul.menu li a').click(
+        function() {
+           var checkElement = $(this).next();
+           var parent = this.parentNode.parentNode.id;
+
+           $('ul.menu li a').removeClass('open');
+         $(this).addClass('open');
+
+         
+           if($('#' + parent).hasClass('noaccordion')) {
+               $(this).next().slideToggle('fast');
+               return false;
+            }
+         if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+           if($('#' + parent).hasClass('collapsible')) {
+            $('#' + parent + ' ul:visible').slideUp('fast');
+         }
+         return false;
+         }
+         if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#' + parent + ' ul:visible').slideUp('fast').removeClass("active");
+            checkElement.slideDown('fast').addClass("active");
+            return false;
+         }
+      }
+   );
+
+  }
 
 //  slider  
 var theInt = null;
@@ -201,6 +207,16 @@ addClass(“active”)
       						</div>
       					</div>
       				</div>
+      				<div class="panel unipower" title="Panel 9"> <!-- unipower http://www.unipower.com -->
+      					<div class="slider_wrapper">
+      						<img src="i/unipower/unipower_product1.png" class="product" alt="unipower"  /> 
+      						<div class="info">
+      						   <img src="i/unipower/logo_75.png"/>
+      							<p>UNIPOWER is world-class producer of power conversion products for Datacom, Telecom, Industrial Controls, Industrial Power and Military industries.</p>
+      							<p><a href="http://www.unipower.com" class="button">Learn More</a></p>
+      						</div>
+      					</div>
+      				</div>
       			</div>
       		</div>
       
@@ -213,6 +229,7 @@ addClass(“active”)
       			<div><a href="#6" class="cross-link"><img src="i/nic/logo_tn.png"                class="nav-thumb" alt="temp-thumb" /></a></div>
       			<div><a href="#7" class="cross-link"><img src="i/bel_power_solutions/bel_power_sol_white.svg" height="24" width="95" class="nav-thumb bel_power_sol" alt="temp-thumb" /></a></div>
       			<div><a href="#8" class="cross-link"><img src="i/radiall/logo_tn.png"            class="nav-thumb" alt="temp-thumb" /></a></div>
+      			<div><a href="#2" class="cross-link"><img src="i/unipower/logo_tn.png"           class="nav-thumb" alt="temp-thumb" /></a></div>
       		</div>
       
       	</div>
@@ -227,79 +244,62 @@ addClass(“active”)
 			<div class="leftNav">
 			   <h1>Product Index</h1>            
             <ul id="navigation" class="menu collapsible">
-				
-				<!--
-            <li>
-					<a class="head" href="?p=1.1.1">Data Storage</a>
-					<ul>
-						<li><a href="http://www.pentair-ep.com/">Pentair</a></li>
-					</ul> 
-				</li>
-
-            <li>
-					<a class="head" href="?p=1.1.2">Electronic Packaging</a>
-					<ul>
-						<li><a href="http://www.pentair-ep.com/">Pentair</a></li>
-					</ul> 
-				</li>
-            -->
 				<li>
-					<a class="head" href="?p=1.1.3">Flat Flex Cable</a>
+					<a class="head" href="?p=1.1.0">Antenna & RF Products</a>
+					<ul>
+						<li><a href="http://www.signaltransformer.com/">Signal Transformer</a></li>
+						<li><a href="http://www.radiall.com/">Radiall</a></li>
+					</ul> 
+				</li>
+				<li>
+					<a class="head" href="?p=1.1.1">Wire and Cable</a>
 					<ul>
 						<li><a href="http://www.juddwire.com/page.php?id=11">Judd</a></li>
 					</ul> 
 				</li>
 				<li>
-					<a class="head" href="?p=1.1.5">Interconnect</a>
+					<a class="head" href="?p=1.1.2">Interconnect</a>
 					<ul>
+						<li><a href="http://belfuse.com/ethernet/">Bel – Stewart/TRP</a></li>
 						<li><a href="http://www.hiroseusa.com/">Hirose</a></li>
-						<!--
-                  <li><a href="http://www.kingselectronics.com/">Kings</a></li>
-						<li><a href="http://www.winchesterelectronics.com/">Winchester</a></li>
-                  -->
 						<li><a href="http://www.radiall.com/">Radiall</a></li>
 						<li><a href="http://www.fastenerspecialty.com/">Fastener Specialty</a></li>
 					</ul> 
 				</li>
-				<!-- <li>
-					<a class="head" href="?p=1.1.6">Labels/Nameplates</a>
+				<li>
+					<a class="head" href="?p=1.1.3">Magnetics</a>
 					<ul>
-						<li><a href="http://nelson-miller.com/">Nelson-Miller</a></li>
-						<li><a href="http://www.seipusa.com/">Sumitomo Heatshrink</a></li>
+						<li><a href="http://www.signaltransformer.com/">Signal Transformer</a></li>
 					</ul> 
 				</li>
-				<li>
-					<a class="head" href="?p=1.1.8">Membrane Switches</a>
-					<ul>
-						<li><a href="http://nelson-miller.com/">Nelson-Miller</a></li>
-					</ul> 
-				</li> -->
                 <li>
-                    <a class="head" href="?p=1.1.8">Masking Products</a>
+                    <a class="head" href="?p=1.1.4">Masking Products</a>
                     <ul>
                         <li><a href="http://www.caplugs.com/">Caplugs</a></li>
                     </ul> 
                 </li>
 				<li>
-					<a class="head" href="?p=1.1.9">Passive Component</a>
+					<a class="head" href="?p=1.1.5">Passive Components</a>
 					<ul>
+						<li><a href="http://belfuse.com/circuit-protection/">Bel Fuse</a></li>
 						<li><a href="http://www.niccomp.com/">NIC Components</a></li>
 					</ul> 
 				</li>
 				<li>
-					<a class="head" href="?p=1.1.10">Power Supplies and Inverters</a>
+					<a class="head" href="?p=1.1.6">Power Conversion</a>
 					<ul>
 						<li><a href="http://belpowersolutions.com/power">Bel Power Solutions</a></li>
+						<li><a href="http://unipowerco.com/">Unipower</a></li>
 					</ul> 
 				</li>
 				<li>
-					<a class="head" href="?p=1.1.10">Product Protection and Packaging</a>
+					<a class="head" href="?p=1.1.7">Product Protection and Packaging</a>
 					<ul>
 						<li><a href="http://www.caplugs.com/">Caplugs</a></li>
 					</ul> 
 				</li>
 				<li>
-					<a class="head" href="?p=1.1.10">Sensors & Controls</a>
+					<a class="head" href="?p=1.1.8">Sensors & Controls</a>
 					<ul>
 						<li><a href="http://sensing.honeywell.com/">Honeywell</a></li>
 					</ul> 

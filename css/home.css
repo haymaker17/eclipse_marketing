@@ -37,11 +37,35 @@ li { list-style-type: none; }
 	cursor:pointer;
 	color: #666666;
 	display:block;
-	margin:0px 0 5px 0;
+	margin:6px 0 6px 0;
 	padding:0px;
 	text-decoration: none;
-	background: url(../i/arrow.gif) no-repeat 0 7px;
+	
 }
+
+#navigation .head:before {
+	content:"";
+	display: block;
+	position: absolute;
+	height: 25px;
+	width: 10px;
+	background: url(../i/arrow.svg) no-repeat 0 50%;
+	background-size: 10px 10px;
+	-webkit-transition: all .15s ease-out;
+	   -moz-transition: all .15s ease-out;
+	    -ms-transition: all .15s ease-out;
+	     -o-transition: all .15s ease-out;
+	        transition: all .15s ease-out;
+}
+
+#navigation .head.open:before {
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
 #navigation a.head:hover {
 	color:#2a68d2;
 }
