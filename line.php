@@ -28,14 +28,18 @@
             <p>Eclipse is honored to represent some of the most distinguished manufacturers in the world:</p>
             
             <ul id="logoGrid">
+                  <li><a href="http://belpowersolutions.com"><img src="i/bel_power_solutions/bel_power_sol_color.svg" alt="Bel Power Solutions" width="184" /></a></li>
+                  <li><a href="http://belfuse.com"><img src="i/bel_fuse/logo_bel.svg" alt="Bel Fuse" width="130" /></a></li>
                   <li><a href="http://www.caplugs.com/"><img src="i/caplugs/logo_75.png" alt="caplugs" width="168" /></a></li>
                   <li><a href="http://www.fastenerspecialty.com/"><img src="i/fastener_specialty/logo_75.png" alt="fastenerSpecialty" width="199" /></a></li>
                   <li><a href="http://www.hiroseusa.com/"><img src="i/hirose/logo_75.png" alt="hirose" width="110" /></a></li>
                   <li><a href="http://sensing.honeywell.com/"><img src="i/honeywell/honeywell_color.svg" alt="honeywell" width="168" /></a></li>
                   <li><a href="http://www.juddwire.com"><img src="i/judd/logo_75.png" alt="judd" width="188" /></a></li>
                   <li><a href="http://www.niccomp.com/"><img src="i/nic/logo_75.png" alt="nic" width="140" /></a></li>
-                  <li><a href="http://belpowersolutions.com/power"><img src="i/bel_power_solutions/bel_power_sol_color.svg" alt="Bel Power Solutions" width="184" /></a></li>
                   <li><a href="http://www.radiall.com/"><img src="i/radiall/logo_75.png" alt="radiall" width="163" /></a></li>
+                  <li><a href="http://www.signaltransformer.com"><img src="i/signal_transformer/logo_signal_transformer.svg" alt="Signal Transformer" width="184" /></a></li>
+                  <li><a href="http://www.stewartconnector.com"><img src="i/stewart/logo_stewart.svg" alt="Stewart Connector" width="184" /></a></li>
+                  <li><a href="http://www.trpconnector.com"><img src="i/trp/logo_trp.svg" alt="TRP" width="184" /></a></li>
                   <li><a href="http://unipowerco.com/"><img src="i/unipower/logo_75.png" alt="unipower" width="163" /></a></li>
             </ul> 
             <a class="download_button" href="downloads/Eclipse Line Card 2016.doc">Download our Line Card 
