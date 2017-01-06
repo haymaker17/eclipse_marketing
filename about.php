@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Eclipse Marketing Group | About Us</title>
-<meta name="Keywords" content="" />
-<meta name="Description" content="" />
+<meta name="Keywords" content="manufacturers representative electronic components northwest seattle" />
+<meta name="Description" content="The leading manufacturers representative of electronic components in the Pacific Northwest" />
 <link rel="stylesheet" type="text/css" media="all" href="css/global.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>

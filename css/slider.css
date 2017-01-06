@@ -61,7 +61,7 @@ blockquote { padding: 0 20px; margin-left: 20px; border-left: 20px solid #ccc; f
 .stripNavL, .stripNavR, .stripNav	   { display: none; }
 .nav-thumb 									   { border: 1px solid rgba(255,255,255,0.0125); margin-right: 5px; padding: 2px 6px;}
 #movers-row									   { margin: -46px 0 0 94px; }
-#movers-row div							   { width: 12.4%; float: left;}
+#movers-row div							   { width: 14.1%; float: left;}
 #movers-row div a.cross-link 			   { float: right; }
 .photo-meta-data							   { background: url(../i/transpBlack.png); padding: 10px; height: 30px; margin-top: -50px; position: relative; z-index: 9999; color: white; }
 .photo-meta-data span 					   { font-size: 13px; }

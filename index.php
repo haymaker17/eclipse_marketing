@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Eclipse Marketing Group</title>
-<meta name="Keywords" content="" />
-<meta name="Description" content="" />
+<meta name="Keywords" content="manufacturers representative electronic components northwest seattle" />
+<meta name="Description" content="The leading manufacturers representative of electronic components in the Pacific Northwest" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" media="all" href="css/global.css" />
 <link rel="stylesheet" type="text/css" media="all" href="css/home.css" />
 <link rel="stylesheet" type="text/css" media="all" href="css/slider.css" />
@@ -14,99 +17,7 @@
 <script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script>
 <script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
 <script type="text/javascript" src="js/coda-slider.1.1.1.pack.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
-<script type="text/javascript" >
 
-   function initMenus() {
-     $('ul.menu ul').hide();
-     $.each($('ul.menu'), function(){
-      $('#' + this.id + '.expandfirst ul:first').show();
-   });
-
-     $('ul.menu li a').click(
-        function() {
-           var checkElement = $(this).next();
-           var parent = this.parentNode.parentNode.id;
-
-           $('ul.menu li a').removeClass('open');
-         $(this).addClass('open');
-
-         
-           if($('#' + parent).hasClass('noaccordion')) {
-               $(this).next().slideToggle('fast');
-               return false;
-            }
-         if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-           if($('#' + parent).hasClass('collapsible')) {
-            $('#' + parent + ' ul:visible').slideUp('fast');
-         }
-         return false;
-         }
-         if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-            $('#' + parent + ' ul:visible').slideUp('fast').removeClass("active");
-            checkElement.slideDown('fast').addClass("active");
-            return false;
-         }
-      }
-   );
-
-  }
-
-//  slider  
-var theInt = null;
-var $crosslink, $navthumb;
-var curclicked = 0;
-
-theInterval = function(cur){
-	clearInterval(theInt);
-	
-	if( typeof cur != 'undefined' )
-		curclicked = cur;
-	
-	$crosslink.removeClass("active-thumb");
-	$navthumb.eq(curclicked).parent().addClass("active-thumb");
-		$(".stripNav ul li a").eq(curclicked).trigger('click');
-	
-	theInt = setInterval(function(){
-		$crosslink.removeClass("active-thumb");
-		$navthumb.eq(curclicked).parent().addClass("active-thumb");
-		$(".stripNav ul li a").eq(curclicked).trigger('click');
-		curclicked++;
-		if( 9 == curclicked )
-			curclicked = 0;
-		
-	}, 7000);
-};
-
-$(function(){
-	
-	$("#main-photo-slider").codaSlider();
-	
-	$navthumb = $(".nav-thumb");
-	$crosslink = $(".cross-link");
-	
-	$navthumb
-	.click(function() {
-		var $this = $(this);
-		theInterval($this.parent().attr('href').slice(1) - 1);
-		return false;
-	});
-	
-	theInterval();
-	initMenus();
-});
-
-
-/*
-removeClass(“active”)
-addClass(“active”)
-*/
-
-
-/* swfobject.embedSWF("frontPage.swf", "flashContent", "1024", "326", "9","expressInstall.swf", false, {wmode:"transparent"}, false); */
-	
-
-</script>
 
 <!--[if lte IE 6]>
 <script type="text/javascript" src="js/supersleight-min.js"></script>
@@ -119,7 +30,6 @@ addClass(“active”)
 	<div id="wrapper">
       <?php include("inc/header.html"); ?>
 
-			
 			
 			<!-- slider -->
 			<div id="page-wrap">
@@ -157,17 +67,8 @@ addClass(“active”)
       						</div>
       					</div>
       				</div>
-      				<div class="panel honeywell" title="Panel 4"> <!-- Honeywell http://sensing.honeywell.com -->
-      					<div class="slider_wrapper">
-      						<img src="i/honeywell/honeywell_product1.png" class="product" alt="honeywell"  /> 
-      						<div class="info">
-      						   <img src="i/honeywell/honeywell_color.svg" width="250"/>
-      							<p>With more than 50,000 products ranging from snap action, limit, toggle and pressure switches to position, speed and airflow sensors, Honeywell S&C has a product to meet any industry’s requirements, any company’s needs.</p>
-      							<p><a href="http://sensing.honeywell.com" class="button">Learn More</a></p>
-      						</div>
-      					</div>
-      				</div>	
-      				<div class="panel judd" title="Panel 5"> <!-- Judd http://www.juddwire.com -->
+      				
+      				<div class="panel judd" title="Panel 4"> <!-- Judd http://www.juddwire.com -->
       					<div class="slider_wrapper">
       						<img src="i/judd/judd_product1.png" class="product" alt="judd"  /> 
       						<div class="info">
@@ -177,7 +78,7 @@ addClass(“active”)
       						</div>
       					</div>
       				</div>
-      				<div class="panel nic" title="Panel 6"> <!-- NIC http://www.niccomp.com -->
+      				<div class="panel nic" title="Panel 5"> <!-- NIC http://www.niccomp.com -->
       					<div class="slider_wrapper">
       						<img src="i/nic/nic_product1.png" class="product" alt="nic"  /> 
       						<div class="info">
@@ -187,7 +88,7 @@ addClass(“active”)
       						</div>
       					</div>
       				</div>
-      				<div class="panel power_one" title="Panel 7"> <!-- Bel Power Solutions http://www.power-one.com -->
+      				<div class="panel power_one" title="Panel 6"> <!-- Bel Power Solutions http://www.power-one.com -->
       					<div class="slider_wrapper">
       						<img src="i/power_one/powerone_product1.png" class="product" alt="power_one"  /> 
       						<div class="info">
@@ -197,7 +98,7 @@ addClass(“active”)
       						</div>
       					</div>
       				</div>	
-      				<div class="panel radiall" title="Panel 8"> <!-- Radiall http://www.radiall.com -->
+      				<div class="panel radiall" title="Panel 7"> <!-- Radiall http://www.radiall.com -->
       					<div class="slider_wrapper">
       						<img src="i/radiall/radiall_product1.png" class="product" alt="radiall"  /> 
       						<div class="info">
@@ -207,7 +108,7 @@ addClass(“active”)
       						</div>
       					</div>
       				</div>
-      				<div class="panel unipower" title="Panel 9"> <!-- unipower http://www.unipower.com -->
+      				<div class="panel unipower" title="Panel 8"> <!-- unipower http://www.unipower.com -->
       					<div class="slider_wrapper">
       						<img src="i/unipower/unipower_product1.png" class="product" alt="unipower"  /> 
       						<div class="info">
@@ -224,12 +125,11 @@ addClass(“active”)
       		<div id="movers-row">
       			<div><a href="#2" class="cross-link"><img src="i/fastener_specialty/logo_tn.png" class="nav-thumb" alt="temp-thumb" /></a></div>
       			<div><a href="#3" class="cross-link"><img src="i/hirose/logo_tn.png"             class="nav-thumb" alt="temp-thumb" /></a></div>
-      			<div><a href="#4" class="cross-link"><img src="i/honeywell/honeywell_color.svg"  height="19" width="102" class="nav-thumb honeywell" alt="temp-thumb" /></a></div>
-      			<div><a href="#5" class="cross-link"><img src="i/judd/logo_tn.png"               class="nav-thumb" alt="temp-thumb" /></a></div>
-      			<div><a href="#6" class="cross-link"><img src="i/nic/logo_tn.png"                class="nav-thumb" alt="temp-thumb" /></a></div>
-      			<div><a href="#7" class="cross-link"><img src="i/bel_power_solutions/bel_power_sol_white.svg" height="24" width="95" class="nav-thumb bel_power_sol" alt="temp-thumb" /></a></div>
-      			<div><a href="#8" class="cross-link"><img src="i/radiall/logo_tn.png"            class="nav-thumb" alt="temp-thumb" /></a></div>
-      			<div><a href="#2" class="cross-link"><img src="i/unipower/logo_tn.png"           class="nav-thumb" alt="temp-thumb" /></a></div>
+      			<div><a href="#4" class="cross-link"><img src="i/judd/logo_tn.png"               class="nav-thumb" alt="temp-thumb" /></a></div>
+      			<div><a href="#5" class="cross-link"><img src="i/nic/logo_tn.png"                class="nav-thumb" alt="temp-thumb" /></a></div>
+      			<div><a href="#6" class="cross-link"><img src="i/bel_power_solutions/bel_power_sol_white.svg" height="24" width="95" class="nav-thumb bel_power_sol" alt="temp-thumb" /></a></div>
+      			<div><a href="#7" class="cross-link"><img src="i/radiall/logo_tn.png"            class="nav-thumb" alt="temp-thumb" /></a></div>
+      			<div><a href="#8" class="cross-link"><img src="i/unipower/logo_tn.png"           class="nav-thumb" alt="temp-thumb" /></a></div>
       		</div>
       
       	</div>
@@ -247,8 +147,11 @@ addClass(“active”)
 				<li>
 					<a class="head" href="?p=1.1.0">Antenna & RF Products</a>
 					<ul>
-						<li><a href="http://www.signaltransformer.com/">Signal Transformer</a></li>
-						<li><a href="http://www.radiall.com/">Radiall</a></li>
+						<li><a href="http://www.niccomp.com/products/pCate.php?pCate=Communication">NIC Components</a></li>
+                  <li><a href="http://www.radiall.com/">Radiall</a></li>
+                  <li><a href="http://www.signaltransformer.com/">Signal Transformer</a></li>
+						
+                  
 					</ul> 
 				</li>
 				<li>
@@ -261,9 +164,10 @@ addClass(“active”)
 					<a class="head" href="?p=1.1.2">Interconnect</a>
 					<ul>
 						<li><a href="http://belfuse.com/ethernet/">Bel – Stewart/TRP</a></li>
+                  <li><a href="http://www.fastenerspecialty.com/">Fastener Specialty</a></li>
 						<li><a href="http://www.hiroseusa.com/">Hirose</a></li>
 						<li><a href="http://www.radiall.com/">Radiall</a></li>
-						<li><a href="http://www.fastenerspecialty.com/">Fastener Specialty</a></li>
+						
 					</ul> 
 				</li>
 				<li>
@@ -298,12 +202,6 @@ addClass(“active”)
 						<li><a href="http://www.caplugs.com/">Caplugs</a></li>
 					</ul> 
 				</li>
-				<li>
-					<a class="head" href="?p=1.1.8">Sensors & Controls</a>
-					<ul>
-						<li><a href="http://sensing.honeywell.com/">Honeywell</a></li>
-					</ul> 
-				</li>
 			</ul>
 			
 			</div>
@@ -334,6 +232,9 @@ addClass(“active”)
 			<?php include("inc/footer.html"); ?>
         
 		</div>
+
+
+      <script type="text/javascript" src="js/scripts.js"></script>
       
 </body>
 </html>

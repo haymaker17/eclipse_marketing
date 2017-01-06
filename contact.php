@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Eclipse Marketing Group | Contact Us</title>
-<meta name="Keywords" content="" />
-<meta name="Description" content="" />
+<meta name="Keywords" content="manufacturers representative electronic components northwest seattle contact" />
+<meta name="Description" content="The leading manufacturers representative of electronic components in the Pacific Northwest" />
 <link rel="stylesheet" type="text/css" media="all" href="css/global.css" />
 <link rel="stylesheet" type="text/css" media="all" href="css/contact.css" />
 
@@ -66,20 +66,7 @@
 			   </ul>
 			</div>
 			
-			<div class="emailList">
-			   <h3>Inside Sales</h3>
-			   <ul>
-   			   <li>
-   			   <strong><a href="javascript:sendMailTo('Bonnie.Studebaker','eclipsemarketing','com')" >Bonnie Studebaker</a></strong><br />
-               Inside Support
-               </li>
-               <li>
-               <strong><a href="javascript:sendMailTo('Alice.Takeuchi','eclipsemarketing','com')" >Alice Takeuchi</a></strong><br />
-               Accounting Manager
-               </li>
-			   </ul>
-			</div>
-			
+
 			<a class="map" href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=13657+NE+126th+Pl+Kirkland,+WA+98034&sll=47.853218,-122.237284&sspn=0.012167,0.023775&ie=UTF8&ll=47.716634,-122.153978&spn=0.048796,0.0951&z=14&iwloc=A"><img id="map_corporate" src="i/map_corporate.gif" alt="map_corporate" width="177" height="177"/></a>
 			
 			
