@@ -4,9 +4,9 @@
     {
         return ( ! preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $str)) ? FALSE : TRUE;
     }
-    if($_POST['name']!='' && $_POST['email']!='' && valid_email($_POST['email'])==TRUE && strlen($_POST['comment'])>1)
+    if($_POST['name']!='' && $_POST['email']!='' && valid_email($_POST['email'])==TRUE) //&& strlen($_POST['comment'])>1
     {
-        $to = "dave.desimone@eclipsemarketing.com";
+        $to = "David.Desimone@eclipsemarketing.com";
         $headers =  'From: '.$_POST['email'].''. "\r\n" .
                 'Reply-To: '.$_POST['email'].'' . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
@@ -18,7 +18,7 @@
         $message .= "Company: " . htmlspecialchars($_POST['company']) . "\r\n";
         $message .= "Email: " . $_POST['email'] . "\r\n";
         $message .= "Phone: " . $_POST['phone'] . "\r\n";
-        /* $message .= "Option: " . $_POST['option'] . "\r\n"; */
+        $message .= "Sample: " . $_POST['sample'] . "\r\n";
         $message .= "Comment:\r\n\r\n" . htmlspecialchars($_POST['comment']) . "\r\n";
         $message .= "==================================================\r\n\r\n";
         $message .= "If you hit 'reply', you will reply to the author.\r\n\r\n";

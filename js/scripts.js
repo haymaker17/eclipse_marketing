@@ -1,92 +1,96 @@
-$(document).ready( function()
-{
-    
-   if($("#main-photo-slider").length) {
-      $("#main-photo-slider").codaSlider();
-   }  
+$(function() {	
    
-   $navthumb = $(".nav-thumb");
-   $crosslink = $(".cross-link");
+   //start the smoothscroll script
+    $('a').smoothScroll();
    
-   $navthumb
-   .click(function() {
-      var $this = $(this);
-      theInterval($this.parent().attr('href').slice(1) - 1);
-      return false;
+   
+   //form validation
+  /* AJAX form sending */
+  $('#contactForm').ajaxForm(function(data) {
+      if (data==1){
+          $('#success').fadeIn("slow");
+          $('#bademail').fadeOut("slow");
+          $('#contactForm').resetForm();
+          $('#contactForm').fadeOut("fast");
+      }
+      else if (data==2) {
+         $('#badserver').fadeIn("slow");
+      }
+      else if (data==3) {
+          $('#bademail').fadeIn("slow");
+          $('#email').css("border-color","red");
+          $('#emailinput').focus();
+      }
+  });
+
+
+
+   //make the hamburger menu work
+   $(".hamburger").on("click", function () {
+      $(".nav").toggleClass("open");
+
+      $("header.nav.open a").on("click", function () {
+         console.log("test");
+         $(".nav").removeClass("open");
+      })
+
    });
+
+
+
+    $(window).scroll(function () {
+
+        fadeinElements();
+
+    });
+
+
    
-   theInterval();
-   initMenus();
+   
+   
+    function fadeinElements() {
+        /* Check the location of each desired element */
+        $('.fadeinElement').each(function(i) {
+
+            var height_of_object = $(this).outerHeight();
+            var bottom_of_object = $(this).offset().top + height_of_object;
+            var middle_of_object = bottom_of_object - (height_of_object/2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > middle_of_object) {
+
+                // $(this).animate({
+                //     'opacity': '1'
+                // }, 500);
+
+                $(this).addClass("visible");
+
+            }
+
+        });
+    }
+
+
+
+fadeinElements();
+   
+
 
 
 }); //end document.ready
 
 
- function initMenus() {
-     $('ul.menu ul').hide();
-     $.each($('ul.menu'), function(){
-      $('#' + this.id + '.expandfirst ul:first').show();
-   });
-
-     $('ul.menu li a').click(
-        function() {
-           var checkElement = $(this).next();
-           var parent = this.parentNode.parentNode.id;
-
-           $('ul.menu li a').removeClass('open');
-         $(this).addClass('open');
-
-         
-           if($('#' + parent).hasClass('noaccordion')) {
-               $(this).next().slideToggle('fast');
-               return false;
-            }
-         if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-           if($('#' + parent).hasClass('collapsible')) {
-            $('#' + parent + ' ul:visible').slideUp('fast');
-         }
-         return false;
-         }
-         if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-            $('#' + parent + ' ul:visible').slideUp('fast').removeClass("active");
-            checkElement.slideDown('fast').addClass("active");
-            return false;
-         }
-      }
-   );
-
-  }
-
-//  slider  
-var theInt = null;
-var $crosslink, $navthumb;
-var curclicked = 0;
-
-theInterval = function(cur){
-   clearInterval(theInt);
-
-   var totalNumber = $("#movers-row > div").length;
-   
-   if( typeof cur != 'undefined' )
-      curclicked = cur;
-   
-   $crosslink.removeClass("active-thumb");
-   $navthumb.eq(curclicked).parent().addClass("active-thumb");
-      $(".stripNav ul li a").eq(curclicked).trigger('click');
-   
-   theInt = setInterval(function(){
-      $crosslink.removeClass("active-thumb");
-      $navthumb.eq(curclicked).parent().addClass("active-thumb");
-      $(".stripNav ul li a").eq(curclicked).trigger('click');
-      curclicked++;
-      if( 8 == curclicked )
-         curclicked = 0;
-      
-   }, 7000);
-};
 
 
 
+/* 
+
+This is a email masking script to prevent spam. It's implemented like this:
+
+href="javascript:sendMailTo('booking','haymaker','tv')" 
+
+*/
 function sendMailTo(name, company, domain) {
   locationstring = 'mai' + 'lto:' + name + '@' + company + '.' + domain;
   window.location.replace(locationstring);
