@@ -97,7 +97,7 @@ section {
 }
 
 .percent_50 {
-   width: 50%;
+   width: 48%;
 }
 
 .percent_30 {
@@ -498,9 +498,6 @@ section.hero {
    text-transform: uppercase;
 }
 
-.contactus .right {
-   padding-left: 40px;
-}
 
 #map {
   height: 490px;
