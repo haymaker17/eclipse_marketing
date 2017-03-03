@@ -415,7 +415,14 @@ section.hero {
 
 .aboutus .percent_70 .inner {
    max-width: 970px;
-   padding: 50px;
+   padding: 50px 50px 100px;
+}
+
+.aboutus ul {
+   list-style: disc;
+   margin: 25px 25px 25px 55px;
+   color: #333;
+   font-weight: 100;
 }
 
 
